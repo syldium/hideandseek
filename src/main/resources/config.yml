@@ -1,0 +1,21 @@
+# HideSeek configuration
+# locale : set the language to be used
+# fall-reducer : divide the fall damage (if equal to 0, cancel them)
+# countdown : time before the game starts
+# hide-timer : the thieves are hiding while this time
+# game-duration in seconds (5 min -> 300 sec, 10 min -> 600 sec)
+# give-trident : instead of bow
+# become-hunter : when a thieve dead, become a hunter
+# save-inventory : keeps the players' inventory so that they can retrieve it
+# nametag-hide : time before the nametag disappears
+
+locale: "en"
+fall-reducer: 2
+countdown: 5
+hide-timer: 15
+game-duration: 30
+give-trident: false
+become-hunter: true
+save-inventory: true
+nametag-hide: 5
+arenas: {}
