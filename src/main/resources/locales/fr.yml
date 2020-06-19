@@ -1,0 +1,95 @@
+prefix: "§7[§6HS§7]"
+
+role:
+  thieve:
+    name: "voleur"
+    plural: "voleurs"
+  hunter:
+    name: "chasseur"
+    plural: "chasseurs"
+  spectator:
+    name: "spectateur"
+    plural: "spectateurs"
+
+messages:
+  title:
+    ready: "Prêt ?"
+    player-has-start: "%player% a lancé la partie"
+    # Waiting phase for hunters
+    wait: "Patiente..."
+    wait-explanation: "Les voleurs vont se cacher."
+    go: "Partez !"
+    go-hide: "Tu dois te cacher !"
+
+  actionbar:
+    game-start-in: "La partie commence dans %time% seconde(s)."
+    hunter-coming-in: "Les chasseurs arrivent dans %time% seconde(s)."
+    teleport-in: "Téléportation dans %time% seconde(s)."
+
+  role:
+    composition: "Composition"
+    you-are: "Ton rôle est %role%."
+    you-are-now: "Tu es maintenant %role%."
+
+  join:
+    party: "Vous avez rejoint la partie."
+    reconnect: "%player% s'est reconnecté."
+    game-resume: "Il reste suffisamment de joueurs. La partie reprend."
+  quit:
+    party: "Vous avez quitté la partie."
+    disconnect: "%player% s'est déconnecté."
+    game-pause: "Il manque des joueurs. Si aucun ne se reconnecte, la partie se termine dans 15 secondes."
+
+  win: "Les %winner% ont gagné !"
+  end: "La partie s'est terminée."
+
+  return:
+    create: "L'arène %arena% a bien été créée."
+    setspawn: "Le point d'apparition des voleurs a été positionné en %xyz%."
+    sethunter: "L'endroit où les chasseurs attendent a été positionné en %xyz%."
+    setlobby: "L'endroit où les joueurs réapparaissent a été positionné en %xyz%."
+    arenas-reload: "La liste des arènes a été rechargée."
+    game-reload: "Les paramètres de jeu ont été rechargés."
+    random:
+      one: "%nb% rôle a été distribué."
+      several: "%nb% rôles ont été distribués."
+    stop: "La partie a été arrêtée."
+    joinall: "Tous les joueurs sont maintenant dans la partie."
+    kickall: "Tous les joueurs ont été expulsés de la partie."
+
+  error:
+    must-be-player: "Tu dois être un joueur pour exécuter cette commande."
+    arena-dont-exist: "L'arène %arena% n'existe pas."
+    arena-already-exist: "L'arène %arena% existe déjà."
+    empty-game: "Personne n'a rejoint la partie."
+    already-in: "Vous êtes déjà dans la partie."
+    not-joined: "Vous n'êtes pas dans une partie."
+    roles-outside: "Il est impossible de voir les rôles en dehors d'une partie."
+    unknown-role: "Rôles disponibles : hunter ou thieve (demandé %role%)."
+    already-started: "Une partie est déjà en cours."
+
+item:
+  sword: "Où sont les voleurs ?"
+  bow-trident: "Tire !"
+  stick: "Pousse-le !"
+  blaze: "Éclaireur"
+  reloading: "En cours de recharge"
+
+command:
+  hsarena-help:
+    - '&6/hsarena create <areana> &7pour créer une arène'
+    - '&6/hsarena setspawn <areana> &7pour placer le point de départ'
+    - '&6/hsarena sethunter <arena> &7pour là où les chasseurs attendent'
+    - '&6/hsarena setlobby <arena> &7pour là où les joueurs réapparaissent'
+  hsgame-help:
+    - '&6/hsgame join &7pour rejoindre la partie'
+    - '&6/hsgame role &e[type] &7pour voir et modifier son rôle'
+    - '&6/hsgame role list &7pour afficher la composition'
+    - '&6/hsgame start <arena> &7pour commencer'
+    - '&6/hsgame randomall &7pour attribuer à tous un rôle aléatoire'
+    - '&6/hsgame <joinall|kickall> &7pour remplir/vider la partie'
+
+scoreboard:
+  name: "Cache-Cache"
+  role: "Rôle"
+  phase: "Phase"

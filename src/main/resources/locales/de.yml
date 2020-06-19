@@ -1,0 +1,94 @@
+prefix: "§7[§6HS§7]"
+
+role:
+  thieve:
+    name: "Dieb"
+    plural: "Diebe"
+  hunter:
+    name: "Jäger"
+    plural: "Jäger"
+  spectator:
+    name: "Zuschauer"
+    plural: "Zuschauer"
+
+messages:
+  title:
+    ready: "Bereit?"
+    player-has-start: "%player% startete das Spiel"
+    wait: "Warte..."
+    wait-explanation: "Die Diebe werden sich verstecken."
+    go: "Geh!"
+    go-hide: "Du musst dich verstecken!"
+
+  actionbar:
+    game-start-in: "Das Spiel beginnt in %time% Sekunde(n)."
+    hunter-coming-in: "Die Jäger kommen in %time% Sekunde(n) an."
+    teleport-in: "Teleportation in %time% Sekunde(n)."
+
+  role:
+    composition: "Teamzusammensetzung"
+    you-are: "Deine Rolle ist %role%."
+    you-are-now: "Du bist jetzt %role%."
+
+  join:
+    party: "Du hast das Spiel teilgenommen."
+    reconnect: "%player% hat sich wieder verbunden."
+    game-resume: ""
+  quit:
+    party: "Du hast das Spiel verlassen."
+    disconnect: "%player% hat sich ausgeloggt."
+    game-pause: "Es fehlen Spieler. Wenn sich niemand wieder verbindet, endet das Spiel in 15 Sekunden."
+
+  win: "Die %winner% haben gewonnen!"
+  end: "Das Spiel endete."
+
+  return:
+    create: "Die %arena% Arena wurde erstellt."
+    setspawn: "Der Spawnpunkt der Diebe wurde in %xyz% gesetzt."
+    sethunter: "Der Ort, an dem die Jäger warten, wurde in %xyz% positioniert."
+    setlobby: "Die Lobby wurde in %xyz% positioniert."
+    arenas-reload: "Die Liste der Arenen wurde neu geladen."
+    game-reload: "Die Spieleinstellungen wurden neu geladen."
+    random:
+      one: "%nb% Rolle wurde verteilt."
+      several: "%nb% Rollen wurden verteilt."
+    stop: "Das Spiel wurde gestoppt."
+    joinall: "Alle Spieler sind jetzt im Spiel."
+    kickall: "Alle Spieler wurden aus dem Spiel vertrieben."
+
+  error:
+    must-be-player: "Du musst ein Spieler sein, um diese Steuerung auszuführen."
+    arena-dont-exist: "Die %arena% Arena existiert nicht."
+    arena-already-exist: "Die %arena% Arena existiert bereits."
+    empty-game: "Niemand hat sich dem Spiel angeschlossen."
+    already-in: "Du bist bereits im Spiel."
+    not-joined: "Du bist nicht in einem Spiel."
+    roles-outside: "Es ist unmöglich, die Rollen außerhalb eines Spiels zu sehen."
+    unknown-role: "Verfügbare Rollen: hunter oder thieve (fragte %role%)."
+    already-started: "Ein Spiel ist bereits im Gange."
+
+item:
+  sword: "Wo sind die Diebe?"
+  bow-trident: "Erschießt ihn!"
+  stick: "Schieb ihn!"
+  blaze: "Späher"
+  reloading: "Aufladen im Gange"
+
+command:
+  hsarena-help:
+    - '&6/hsarena create <areana> &7um eine Arena zu erstellen'
+    - '&6/hsarena setspawn <areana> &7um den Spawnpunkt zu setzen'
+    - '&6/hsarena sethunter <arena> &7wo Jäger warten'
+    - '&6/hsarena setlobby <arena> &7wo die Spieler wieder auftauchen'
+  hsgame-help:
+    - '&6/hsgame join &7um am Spiel teilzunehmen'
+    - '&6/hsgame role &e[type] &7um seine Rolle zu sehen und zu ändern'
+    - '&6/hsgame role list &7um die Zusammensetzung anzuzeigen'
+    - '&6/hsgame start <arena> &7um zu starten'
+    - '&6/hsgame randomall &7um allen eine zufällige Rolle zuzuweisen'
+    - '&6/hsgame <joinall|kickall> &7um den Teilnehmer zu befüllen/entleeren'
+
+scoreboard:
+  name: "Versteckspiel"
+  role: "Rolle"
+  phase: "Phase"

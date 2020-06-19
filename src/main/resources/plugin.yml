@@ -1,0 +1,33 @@
+name: Hideandseek
+version: ${project.version}
+main: com.github.syldium.hideseek.HSPlugin
+api-version: 1.13
+commands:
+  hsarena:
+    description: Setup a hide and seek game.
+    usage: /<command> help
+    permission: hsgame.admin.arena
+    permission-message: You do not have permission!
+  hsgame:
+    description: Play hide and seek !
+    usage: /<command> help
+permissions:
+  hsgame.join:
+    description: Allows to join game
+    default: true
+    children:
+      hsgame.leave: true
+  hsgame.start:
+    description: Allows to start game
+    default: op
+    children:
+      hsgame.quit: true
+  hsgame.admin.*:
+    description: Allows admin command
+    default: op
+    children:
+      hsgame.admin.arena: true
+      hsgame.admin.randomall: true
+      hsgame.admin.reload: true
+      hsgame.admin.joinall: true
+      hsgame.admin.kickall: true

@@ -1,0 +1,98 @@
+# Prefix used in front of each message in the chat
+prefix: "§7[§6HS§7]"
+
+role:
+  thieve:
+    name: "thieve"
+    plural: "thieves"
+  hunter:
+    name: "hunter"
+    plural: "hunters"
+  spectator:
+    name: "spectator"
+    plural: "spectators"
+
+messages:
+  title:
+    # During the countdown
+    ready: "Ready?"
+    player-has-start: "%player% launched the game"
+    # Waiting phase for hunters
+    wait: "Wait..."
+    wait-explanation: "The thieves will hide."
+    # Information for thieves
+    go: "Go away!"
+    go-hide: "You have to hide!"
+
+  actionbar:
+    game-start-in: "The game starts in %time% second(s)."
+    hunter-coming-in: "Hunters come in %time% second(s)."
+    teleport-in: "Teleportation in %time% second(s)."
+
+  role:
+    composition: "Composition"
+    you-are: "Your role is %role%."
+    you-are-now: "You are now %role%."
+
+  join:
+    party: "You have joined the game."
+    reconnect: "%player% has reconnected." # Seen by the players in the game
+    game-resume: "There are enough players left. The game resumes."
+  quit:
+    party: "You have left the game."
+    disconnect: "%player% has disconnected." # Seen by the players in the game
+    game-pause: "There are missing players. If no one reconnects, the game ends in 15 seconds."
+
+  win: "The %winner% won!"
+  end: "The game ended."
+
+  return:
+    create: "The %arena% arena has been created."
+    setspawn: "The spawn point of the thieves has been set in %xyz%."
+    sethunter: "The place where the hunters are waiting has been positioned in %xyz%."
+    setlobby: "The lobby has been positioned in %xyz%."
+    arenas-reload: "The list of arenas has been reloaded."
+    game-reload: "The game settings have been reloaded."
+    random:
+      one: "%nb% role has been distributed."
+      several: "%nb% roles have been distributed."
+    stop: "The game has been stopped."
+    joinall: "All players are now in the game."
+    kickall: "All players have been kicked out of the game."
+
+  error:
+    must-be-player: "You must be a player to execute this command."
+    arena-dont-exist: "The %arena% arena does not exist."
+    arena-already-exist: "The %arena% arena already exists."
+    empty-game: "Nobody joined the game."
+    already-in: "You're already in the game."
+    not-joined: "You're not in a game."
+    roles-outside: "It is impossible to see the roles outside of a game."
+    unknown-role: "Roles available : hunter or thieve (asked %role%)."
+    already-started: "A party is already in progress."
+
+item:
+  sword: "Where are the thieves?"
+  bow-trident: "Shoot him!"
+  stick: "Push him!"
+  blaze: "Pathfinder"
+  reloading: "Recharging in progress"
+
+command:
+  hsarena-help:
+    - '&6/hsarena create <arena> &7to create an arena'
+    - '&6/hsarena setspawn <arena> &7to set the spawn point'
+    - '&6/hsarena sethunter <arena> &7for where hunters are waiting'
+    - '&6/hsarena setlobby <arena> &7to fix the lobby'
+  hsgame-help:
+    - '&6/hsgame join &7to join the game'
+    - '&6/hsgame role &e[type] &7to see and modify your role'
+    - '&6/hsgame role list &7to display the composition'
+    - '&6/hsgame start <arena> &7to start'
+    - '&6/hsgame randomall &7to assign everyone a random role'
+    - '&6/hsgame <joinall|kickall> &7to fill/empty the party'
+
+scoreboard:
+  name: "HideAndSeek"
+  role: "Role"
+  phase: "Phase"
